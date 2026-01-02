@@ -1,0 +1,278 @@
+/* Minimalist 2011 Forum Style - OpenSchool */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    font-size: 12px;
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.4;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+#header {
+    background: linear-gradient(to bottom, #e0e0e0, #cccccc);
+    color: #333;
+    padding: 8px 15px;
+    border: 1px solid #aaa;
+    border-top: 3px solid #666;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#header h1 {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.nav {
+    float: right;
+    padding-top: 3px;
+}
+
+.nav a {
+    color: #333;
+    margin-left: 15px;
+    font-size: 11px;
+    padding: 3px 8px;
+    background: #ddd;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+.nav a:hover {
+    background: #e6e6e6;
+    text-decoration: none;
+}
+
+/* Container */
+#container {
+    width: 900px;
+    margin: 10px auto;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Content */
+#content {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 13px;
+    color: #232323;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Forms */
+.form-row {
+    margin-bottom: 8px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.form-row input, .form-row select {
+    padding: 3px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    border-radius: 2px;
+}
+
+.btn {
+    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+    color: #333;
+    padding: 4px 12px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #f5f5f5, #d5d5d5);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 11px;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(to bottom, #e0e0e0, #cccccc);
+    font-weight: bold;
+    font-size: 11px;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Grade input form */
+.grade-input {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.grade-input form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.grade-input .form-row {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.grade-input input, .grade-input select {
+    width: auto;
+}
+
+/* Alert box */
+.alert-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 500px;
+    z-index: 1000;
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.alert-header {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid #2c3e50;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert-body {
+    padding: 15px;
+    line-height: 1.4;
+}
+
+.alert-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.alert-btn {
+    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+    color: #333;
+    padding: 4px 12px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.alert-btn:hover {
+    background: linear-gradient(to bottom, #f5f5f5, #d5d5d5);
+}
+
+/* Overlay background for modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 999;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 11px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Dashboard specific styles */
+.user-greeting {
+    background: #f0f0f0;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 11px;
+}
+
+/* Student grade display */
+.grade-display {
+    background: linear-gradient(to bottom, #e0e0e0, #cccccc);
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    border: 1px solid #bbb;
+}
+
+/* Custom styles that complement Bootstrap */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Custom styles for any specific elements that need additional styling */
+.user-greeting {
+    margin-bottom: 20px;
+}
+
+.grade-display {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+/* Additional custom styles as needed */
