@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Настройка - OpenSchool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">OpenSchool - Electronic Diary</a>
+            <div class="navbar-nav ms-auto">
+                <span class="navbar-text">Настройка системы</span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Добро пожаловать в OpenSchool!</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Перед началом работы необходимо настроить систему.</p>
+                        
+                        <form method="post" action="/setup">
+                            <div class="mb-3">
+                                <label for="language" class="form-label">Язык интерфейса:</label>
+                                <select name="language" id="language" class="form-select" required>
+                                    <option value="ru">Русский</option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="grading_system" class="form-label">Система оценок:</label>
+                                <select name="grading_system" id="grading_system" class="form-select" required>
+                                    <option value="5-point">5-балльная система (Российская)</option>
+                                    <option value="10-point">10-балльная система</option>
+                                    <option value="letter">Буквенная система (A-F)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="admin_username" class="form-label">Логин администратора:</label>
+                                <input type="text" name="admin_username" id="admin_username" class="form-control" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="admin_password" class="form-label">Пароль администратора:</label>
+                                <input type="password" name="admin_password" id="admin_password" class="form-control" required>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">Завершить настройку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">Система Электронного Дневника OpenSchool &copy; 2026</span>
+        </div>
+    </footer>
+</body>
+</html>

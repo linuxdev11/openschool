@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вход - OpenSchool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">OpenSchool - Electronic Diary</a>
+            <div class="navbar-nav ms-auto">
+                <span class="navbar-text">Вход в систему</span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Вход в систему</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="/login">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Имя пользователя:</label>
+                                <input type="text" name="username" id="username" class="form-control" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Пароль:</label>
+                                <input type="password" name="password" id="password" class="form-control" required>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Войти</button>
+                            </div>
+                        </form>
+                        
+                        <div class="mt-3">
+                            <small class="text-muted">
+                                Демо аккаунты:<br>
+                                Учитель: admin / admin<br>
+                                Ученик: user / user
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">Система Электронного Дневника OpenSchool &copy; 2026</span>
+        </div>
+    </footer>
+</body>
+</html>
