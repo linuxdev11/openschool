@@ -8,7 +8,6 @@ openschool — это легкая и открытая система элект
 * **авторизация**: вход для учеников и учителей.
 * **управление данными**: просмотр и выставление оценок через удобный интерфейс.
 * **архитектура**: поддержка нескольких баз данных sqlite для разделения данных.
-* **пасхалка**: секретный эндпоинт «i'm a teapot» (код 418) с сюрпризом от разработчика.
 
 #### дорожная карта:
 * **v1.0**: стабильный прототип на python (fastapi).
@@ -29,7 +28,6 @@ openschool is a lightweight and open-source electronic diary system built with f
 * **auth**: user authorization for students and teachers.
 * **data management**: viewing and adding grades via a clean ui.
 * **architecture**: multiple sqlite database support for data isolation.
-* **easter egg**: "i'm a teapot" status code (418) with secret developer content.
 
 #### roadmap:
 * **v1.0**: stable prototype in python (fastapi).
